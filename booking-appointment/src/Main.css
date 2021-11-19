@@ -1,0 +1,216 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+  
+.first {
+font-size: 2em;
+}
+.items {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:25px;
+padding: 10px;
+color: whitesmoke;
+}
+.container {
+  margin-top: 20px;
+}
+
+.shortcut {
+background:#5a77f5;
+border-right:1px solid #e5e5e5;
+top:0;
+position:absolute;
+height: 100%;
+bottom: 0;
+left:0;
+width:62px;
+overflow:hidden;
+z-index:1000;
+}
+
+.shortcut>ul {
+margin:7px 0;
+}
+
+.shortcut li {
+position:relative;
+display:block;
+width:250px;
+margin-bottom: 30px;
+}
+
+.shortcut li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.shortcut .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.shortcut li a{
+color:#fff;
+background-color:#5a77f5;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+clear: both;
+}
+
+.headline {
+   color: rgb(61, 43, 226);
+   margin-left: 5em;
+   padding-bottom: 0.5em;
+   padding-top:0.5em ;
+}
+.button1 {
+  border-radius: 45px;
+  font-size: small;
+  background-color: blue;
+  margin-left: 4em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  
+}
+.page {
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 85px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+  border-radius: 20px;
+}
+.tb-head {
+  background-color: green;
+  padding: 25px;
+  color: white;
+}
+
+.tb-body{
+  background-color: rgb(196, 184, 184);
+  color: rgb(112, 77, 145);
+}
+
+.img-fluid{
+ padding-top: 1em;
+ padding-left: 1em;
+ height: 7em;
+}
+.bt1{
+  background-color: white;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.component {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+   border-radius: 34px;
+}
+
+.component:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .component {
+  background-color: #2ab934;
+}
+
+input:focus + .component {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .component:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(55px);
+}
+
+.component:after
+{
+ content:'OFF';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 10px;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + .component:after
+{  
+  content:'ON';
+}
+
+.btn2{
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 1em;
+
+}
